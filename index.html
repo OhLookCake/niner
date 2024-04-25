@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Niner</title>
+    <link rel="stylesheet" href="dark.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+
+    <div class="rack" id="rack"> </div>
+    <div class="solutions" id="solutions"> </div>
+
+        <input type="button" value="Go" id="generate">
+        <input type="button" value="Solve" id="solve">
+
+        <hr />
+        <div>
+            Vowels
+            <input type="radio" name="n_vowels" value="3" id="v3" checked="checked"><label for="3">3</label>
+            <input type="radio" name="n_vowels" value="4" id="v4"><label for="4">4</label>
+            <input type="radio" name="n_vowels" value="5" id="v5"><label for="5">5</label>
+            <input type="radio" name="n_vowels" value="-1" id="vR"><label for="-1">Random</label>
+        </div>
+        <div>
+            Sort
+            <input type="radio" value="alpha" name="sorting" checked="checked"><label for="alpha">Alpha</label>
+            <input type="radio" value="vc" name="sorting"><label for="vc">VC</label>
+            <input type="radio" value="cv" name="sorting"><label for="cv">CV</label>
+            <input type="radio" value="alternate" name="sorting"><label for="alternate">Alternate</label>
+            <input type="radio" value="random" name="sorting"><label for="random">Random</label>
+        </div>
+
+    </main>
+  
+	<script src="generator.js"></script>
+	<script src="solver.js"></script>
+  </body>
+</html>
