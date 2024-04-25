@@ -94,7 +94,7 @@ function select_and_show(){
     console.log('Options\n n_vowels: ' + n_vowels + ' | sorting: ' + technique)
     selection = generate_nine(n_vowels, technique);
     console.log(selection)
-    show_selection(selection.join(" ")); 
+    show_selection(selection.join("")); 
     document.getElementById("solve").focus();
 }
 
